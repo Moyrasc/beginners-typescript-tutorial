@@ -1,6 +1,6 @@
 import { expect, it } from "vitest";
-
-export const getName = (params: { first: string; last: string }) => {
+//agregar el signo ? convertirá la propiedad en opcional 
+export const getName = (params: { first: string; last?: string }) => {
   if (params.last) {
     return `${params.first} ${params.last}`;
   }

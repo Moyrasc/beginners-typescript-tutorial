@@ -1,6 +1,6 @@
 import { expect, it } from "vitest";
-
-export const addTwoNumbers = (params) => {
+// también nos pasaría el test any, pero es demasiado generico 
+export const addTwoNumbers = (params: { first: number, second: number }) => {
   return params.first + params.second;
 };
 
